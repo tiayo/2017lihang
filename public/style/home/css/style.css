@@ -887,7 +887,8 @@ body {
     box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
 }
 .pc .content .con ul li .status {
-    height: 35px;
+    float: left;
+    height: 100%;
     padding: 0 2%;
     color: #e2302e;
     font-weight: bold;
@@ -907,6 +908,7 @@ body {
     width: 96%;
     height: auto;
     padding: 2%;
+    margin-bottom: 0;
     background: #fff;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
@@ -928,41 +930,51 @@ body {
     /*top: 8px;
     left: 85px;*/
     width: 100%;
-    height: 20px;
-    padding-bottom: 5px;
+    height: 40px;
+    /*padding-bottom: 5px;*/
+    margin-bottom: 10px;
     color: #333;
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
-    line-height: 20px;
-    border-bottom: 1px solid #999;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 1px 1px 5px #999,
+                -1px -1px 5px #999;
+    /*border-bottom: 1px solid #999;*/
 }
 .pc .content .con ul li .info ul {
     padding: 5px 0;
 }
 .pc .content .con ul li .info ul li {
+    float: left;
+    width: 49%;
     height: 20px;
     line-height: 20px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     border-bottom: 0;
+    box-shadow: 1px 1px 5px #999,
+                -1px -1px 5px #999;
+}
+.pc .content .con ul li .info ul li:nth-child(2n+2) {
+    float: right;
 }
 .pc .content .con ul li .info ul li span {
     float: left;
     height: 100%;
     color: #000;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 .pc .content .con ul li .info ul li em {
     float: right;
     height: 100%;
     color: #999;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 .pc .content .con ul li .info ul li strong {
     float: right;
     height: 100%;
     color: #999;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
 }
 /*.pc .content .con ul li .info .pay-for {
     position: absolute;
@@ -981,11 +993,13 @@ body {
 }*/
 .pc .content .con ul li h4 {
     float: left;
-    width: 98%;
+    width: 100%;
     height: 35px;
-    padding-left: 2%;
+    /*padding-left: 2%;*/
     color: #999;
+    margin-bottom: 10px;
     line-height: 35px;
+    border-bottom: 1px solid #999;
 }
 .pc .content .con ul li h4 span {
     float: right;
@@ -2135,43 +2149,56 @@ body {
     position: relative;
     float: left;
     width: 100%;
-    margin-bottom: 10px;
     background: #fff;
+    border-bottom: 1px solid #e7e7e7;
 }
 .goods-settlement .address h1 {
+    height: 40px;
+    padding: 0 3%;
+    color: #000;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.goods-settlement .address div {
+    height: 35px;
+    padding: 0 3%;
+    margin-bottom: 10px;
+}
+.goods-settlement .address div label {
     float: left;
-    width: 100%;
-    margin-top: 10px;
-    text-align: left;
+    height: 100%;
+    line-height: 35px;
+}
+.goods-settlement .address div .name-input {
+    float: left;
+    width: 70%;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+    outline: none;
     line-height: 25px;
 }
-.goods-settlement .address h1 .name-input {
+.goods-settlement .address div .tel-input {
     float: left;
-    width: 40%;
-    height: 30px;
-    margin-left: 20px;
+    width: 70%;
+    height: 25px;
+    margin-left: 34px;
+    margin-top: 5px;
     outline: none;
-    margin-bottom: 5px;
-    line-height: 30px;
+    line-height: 25px;
 }
-.goods-settlement .address h1 .tel-input {
+.goods-settlement .address div .address-input {
     float: left;
-    width: 40%;
-    height: 30px;
-    margin-left: 20px;
-    outline: none;
-    margin-bottom: 5px;
-    line-height: 30px;
-}
-.goods-settlement .address .address-input {
-    float: left;
-    width: 90%;
-    height: 30px;
-    margin-left: 20px;
+    width: 70%;
+    margin-left: 6px;
+    height: 25px;
     color: #666;
     outline: none;
     text-align: left;
-    line-height: 30px;
+    margin-top: 5px;
+    line-height: 25px;
 }
 .goods-settlement .content {
     float: left;
@@ -2266,7 +2293,7 @@ body {
     width: 30%;
     height: 45px;
     background-color: #1e89e0;
-    color: #333;
+    color: #fff;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -2947,43 +2974,39 @@ body {
 }
 
 /*店铺页面*/
-.store .header {
+.store .header-name {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+}
+.store .header {
+    position: fixed;
+    top: 40px;
     width: 100%;
     height: 150px;
-    background: #1e89e0;
     z-index: 999;
 }
 .store .header .store-logo {
     position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    width: 88px;
-    height: 88px;
-    margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: 1px 1px 5px #000,
-                -1px -1px 5px #000;
-}
-.store .header .store-name {
-    position: absolute;
-    bottom: 5px;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 35px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 35px;
+    height: 100%;
 }
 .store .tab {
     position: absolute;
     overflow: scroll;
-    top: 150px;
+    top: 190px;
     left: 0;
-    bottom: 45px;
+    bottom: 90px;
     width: 25%;
     background: #f4f4f4;
     box-shadow: 0px -1px 5px #999;
@@ -3002,10 +3025,10 @@ body {
 .store .tabcon {
     position: absolute;
     overflow: scroll;
-    top: 150px;
+    top: 190px;
     left: 25%;
     right: 0;
-    bottom: 45px;
+    bottom: 90px;
     width: 75%;
     background-color: #fff;
     box-shadow: 0px -1px 5px #999;
@@ -3083,17 +3106,18 @@ body {
 }
 .store .total {
     position: fixed;
-    bottom: 0;
+    bottom: 50px;
     width: 100%;
     height: 45px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #999;
 }
 .store .total .total-price {
     float: left;
     width: 180px;
     height: 100%;
     padding-left: 20px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     font-size: 18px;
     line-height: 45px;
@@ -3110,4 +3134,5 @@ body {
     font-size: 16px;
     text-align: center;
     line-height: 45px;
+    box-shadow: 1px 1px 5px #999;
 }

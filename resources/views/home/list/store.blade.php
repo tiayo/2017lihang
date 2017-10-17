@@ -32,13 +32,8 @@
         </ul>
         <!-- <h4>上拉加载更多</h4> -->
     </div>
-    <div class="quick-nav">
-        <em>快速导航</em>
-    </div>
-    <div class="quick-nav-mask">
-        <div class="quick-con">
-            @include('home.layouts.quick')
-        </div>
+    <div class="nav clearfix">
+        @include('home.layouts.quick')
     </div>
     <em class="return-top">顶部</em>
 </div>

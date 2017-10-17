@@ -2,12 +2,22 @@
 
 @section('title', '商铺页面')
 
+@section('style')
+    <style>
+        .store .header-name {
+            color: white;
+            background: rgba(0,0,0,0.6);
+            font-size: 18px;
+        }
+    </style>
+@endsection
+
 @section('body')
     <div class="store clearfix">
         <div class="header">
             <img src="{{ $business['avatar'] }}" class="store-logo"/>
-            <div class="store-name">{{ $business['name'] }}</div>
         </div>
+        <div class="header-name">{{ $business['name'] }}</div>
         <ul class="tab clearfix">
             @foreach($lists as $key => $list)
                 <li @if ($key == 0) class="on" @endif>{{ $list['name'] }}</li>
@@ -36,13 +46,8 @@
             <button class="clearing" type="button">去结算</button>
         </div>
     </div>
-    <div class="quick-nav">
-        <em>快速导航</em>
-    </div>
-    <div class="quick-nav-mask">
-        <div class="quick-con">
-            @include('home.layouts.quick')
-        </div>
+    <div class="nav clearfix">
+        @include('home.layouts.quick')
     </div>
     <form class="hidden" method="post" action="{{ route('home.order_add', ['business_id' => $business['id']]) }}" id="submit_form">
         {{ csrf_field() }}
