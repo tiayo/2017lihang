@@ -4,7 +4,7 @@ return [
     'administrator' => env('SITE_ADMINISTRATE'),
     'upload_image_size' => 1024,
     'list_num' => env('SITE_LIST_NUM'),
-    'title' => '嗨吃', //网站标题
+    'title' => '外卖', //网站标题
     'order_status' => [ //订单状态
         0 => '等待支付',
         1 => '等待商家接单',
@@ -16,7 +16,7 @@ return [
         7 => '退款完成',
     ],
     'order_type' => [
-        1 => '嗨吃专送',
+        1 => '平台专送',
         2 => '用户自提',
     ],
     'week' => [
