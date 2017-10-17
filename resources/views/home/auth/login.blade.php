@@ -18,7 +18,7 @@
             top: 50px;
             width: 100%;
             height: 95px;
-            color: #000;
+            color: #fff;
             font-size: 16px;
             letter-spacing: 10px;
             text-indent: 10px;
