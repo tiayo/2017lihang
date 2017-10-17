@@ -23,7 +23,7 @@
                         </div>
                         <h2>{{ $list['name'] }}</h2>
                         <strong class="price clearfix">
-                            <span>{{ $list['address'] }}</span>
+                            <span>电话</span>
                             <em>{{ $list['phone'] }}</em>
                         </strong>
                     </a>

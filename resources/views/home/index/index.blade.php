@@ -48,13 +48,9 @@
             <h1>© {{ config('site.title') }} 版权所有</h1>
             <h2>李行提供技术支持</h2>
         </div>
-        <div class="quick-nav">
-            <em>快速导航</em>
-        </div>
         <div class="nav clearfix">
             @include('home.layouts.quick')
         </div>
-    </div>
     <em class="return-top">顶部</em>
     <script type="text/javascript">
         var mySwiper = new Swiper ('.swiper-container', {
