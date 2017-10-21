@@ -17,7 +17,7 @@
             top: 0;
             width: 100%;
             height: 45px;
-            background: #ffda44;
+            background: #1e89e0;
             z-index: 999;
         }
         .search .cancel {
