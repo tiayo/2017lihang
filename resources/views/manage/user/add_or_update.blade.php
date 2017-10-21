@@ -7,8 +7,8 @@
 @endsection
 
 @section('breadcrumb')
-    <li navValue="nav_2"><a href="#">商户/会员管理</a></li>
-    <li navValue="nav_2_2"><a href="#">商户/会员管理</a></li>
+    <li navValue="nav_4"><a href="#">商户管理</a></li>
+    <li navValue="nav_4_2"><a href="#">添加商户</a></li>
 @endsection
 
 @section('body')
@@ -28,7 +28,7 @@
 
         <section class="panel">
             <header class="panel-heading">
-                商户/会员资料管理
+                添加商户
             </header>
             <div class="panel-body">
                 <form id="form" class="form-horizontal adminex-form" enctype="multipart/form-data" method="post" action="{{ $url }}">

@@ -25,10 +25,15 @@
     </li>
 
     @if(can('admin'))
-        <li class="menu-list" id="nav_2"><a href=""><i class="fa fa-user"></i> <span>商户/会员管理</span></a>
+        <li class="menu-list" id="nav_2"><a href=""><i class="fa fa-user"></i> <span>会员管理</span></a>
             <ul class="sub-menu-list">
                 <li id="nav_2_1"><a href="{{ route('user_list') }}">会员管理</a></li>
-                <li id="nav_2_2"><a href="{{ route('user_add') }}">添加商户</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-list" id="nav_4"><a href=""><i class="fa fa-telegram"></i> <span>添加商户</span></a>
+            <ul class="sub-menu-list">
+                <li id="nav_4_1"><a href="{{ route('user_add') }}">添加商户</a></li>
             </ul>
         </li>
     @endif
